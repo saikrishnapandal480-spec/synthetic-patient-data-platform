@@ -3,9 +3,11 @@ import { NavLink, Link } from 'react-router-dom'
 import { NAV_ITEMS } from './navConfig.js'
 import Icon from '../ui/Icon.jsx'
 import Badge from '../ui/Badge.jsx'
+import { useApp } from '../../state/AppContext.jsx'
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false)
+  const { isDemoMode } = useApp()
   return (
     <>
       <header className="sticky top-0 z-40 border-b border-white/5 bg-ink-950/85 backdrop-blur-xl lg:hidden">
@@ -66,7 +68,7 @@ export default function MobileNav() {
             ))}
           </nav>
           <div className="px-4 pt-2">
-            <Badge variant="mock">Demo mode</Badge>
+            {isDemoMode ? <Badge variant="mock">Demo mode</Badge> : <Badge variant="success">Live backend</Badge>}
           </div>
         </div>
       </div>

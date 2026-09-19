@@ -17,7 +17,7 @@ const NAV_TITLE_MAP = {
 }
 
 export default function Layout() {
-  const { datasetName } = useApp()
+  const { datasetName, isDemoMode } = useApp()
   const location = useLocation()
   const [title, desc] = NAV_TITLE_MAP[location.pathname] || ['Dashboard', 'Workspace overview']
 
@@ -32,7 +32,11 @@ export default function Layout() {
             <p className="text-xs text-slate-500">{desc}</p>
           </div>
           <div className="flex items-center gap-3">
-            <Badge variant="mock">Demo mode — mock data</Badge>
+            {isDemoMode ? (
+              <Badge variant="mock">Demo mode — mock data</Badge>
+            ) : (
+              <Badge variant="success">Live backend — synthetic data</Badge>
+            )}
             <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-300">
               <Icon name="file" className="h-3.5 w-3.5 text-sky-300" />
               <span className="max-w-52 truncate font-medium">{datasetName}</span>

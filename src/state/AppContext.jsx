@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react'
 import { generateSyntheticCohort, getOriginalSummary, backendPatientsToCanonical } from '../data/mockData.js'
-import { api, cohortErrorMessage } from '../api/client.js'
+import { api, cohortErrorMessage, setDemoMode } from '../api/client.js'
 
 const AppContext = createContext(null)
 
@@ -12,7 +12,7 @@ export const DEFAULT_COHORT = {
   activity: 'Mirror source distribution',
 }
 
-const STORAGE_KEY = 'spdp.session.v1'
+const STORAGE_KEY = 'spdp.session.v2'
 
 function loadPersisted() {
   try {
@@ -28,26 +28,33 @@ function loadPersisted() {
 export function AppProvider({ children }) {
   const persisted = useMemo(loadPersisted, [])
 
+  // Backend is live since Phase 4 — default to it (demo mode is an explicit opt-in via the sidebar toggle).
+  const [isDemoMode, setIsDemoMode] = useState(persisted.isDemoMode ?? false)
   const [datasetName, setDatasetName] = useState(persisted.datasetName || 'cardio_cohort_2024.csv')
   const [cohortConfig, setCohortConfig] = useState(persisted.cohortConfig || DEFAULT_COHORT)
   const [syntheticPatients, setSyntheticPatients] = useState(persisted.syntheticPatients || null)
   const [hasGenerated, setHasGenerated] = useState(Boolean(persisted.hasGenerated))
-  const [generationStatus, setGenerationStatus] = useState('idle') // idle | generating | done
   // Phase 6 — custom cohort generated via the FastAPI backend.
   const [customCohort, setCustomCohort] = useState(persisted.customCohort || null)
   const [customCohortStatus, setCustomCohortStatus] = useState('idle') // idle | generating | done | error
+  const [generationStatus, setGenerationStatus] = useState('idle') // idle | generating | done
 
-  // Keep the mock session alive across page reloads (still no backend involved).
+  // Sync demo mode to API client
+  useEffect(() => {
+    setDemoMode(isDemoMode)
+  }, [isDemoMode])
+
+  // Keep the mock session alive across page reloads.
   useEffect(() => {
     try {
       sessionStorage.setItem(
         STORAGE_KEY,
-        JSON.stringify({ datasetName, cohortConfig, syntheticPatients, hasGenerated, customCohort }),
+        JSON.stringify({ datasetName, cohortConfig, syntheticPatients, hasGenerated, customCohort, isDemoMode }),
       )
     } catch {
-      // Storage full or unavailable — demo state simply won't survive a refresh.
+      // Storage full or unavailable
     }
-  }, [datasetName, cohortConfig, syntheticPatients, hasGenerated, customCohort])
+  }, [datasetName, cohortConfig, syntheticPatients, hasGenerated, customCohort, isDemoMode])
 
   // Mock "generation": builds a seeded synthetic cohort client-side after a delay.
   const generateCohort = (config) => {
@@ -71,10 +78,7 @@ export function AppProvider({ children }) {
     setCustomCohortStatus('idle')
   }
 
-  // Phase 6 — calls POST /api/cohort/generate on the FastAPI backend, persists
-  // the generated records server-side (so the ADR Predictor sees them via
-  // GET /api/patients) and stores them in canonical shape so Dashboard,
-  // Synthetic Data and Validation render them without any page changes.
+  // Phase 6 — calls POST /api/cohort/generate on the FastAPI backend (or uses mock data in demo mode)
   const generateCustomCohort = async (params) => {
     setCustomCohortStatus('generating')
     try {
@@ -91,9 +95,6 @@ export function AppProvider({ children }) {
         modelingNotes: resp.modeling_notes || [],
         generatedAt: new Date().toISOString(),
       })
-      // Integration: feed the backend cohort into the existing workflow views.
-      // Dashboard/Validation/SyntheticData read `syntheticPatients`, and the
-      // ADR Predictor reads the persisted backend records via GET /api/patients.
       const ageGroups = { '18–35': 0, '36–55': 0, '56–75': 0, '76+': 0 }
       patients.forEach((p) => {
         if (ageGroups[p.ageGroup] !== undefined) ageGroups[p.ageGroup] += 1
@@ -115,11 +116,7 @@ export function AppProvider({ children }) {
     }
   }
 
-  // Phase 7 — session recovery: after a browser refresh, if no cohort exists in
-  // this tab's session, recover the current one from the shared backend store
-  // (the same records served to GET /api/patients and the Interaction
-  // Predictor via /api/cohort/latest). Keeps Dashboard / Synthetic Data /
-  // Validation populated across reloads without any frontend-only dataset.
+  // Phase 7 — session recovery
   useEffect(() => {
     let cancelled = false
     api.latestCohort()
@@ -152,9 +149,7 @@ export function AppProvider({ children }) {
         setSyntheticPatients(patients)
         setHasGenerated(true)
       })
-      .catch(() => {
-        // No backend or no cohort yet — pages keep their own empty states.
-      })
+      .catch(() => {})
     return () => {
       cancelled = true
     }
@@ -163,6 +158,8 @@ export function AppProvider({ children }) {
   const originalSummary = useMemo(() => getOriginalSummary(), [])
 
   const value = {
+    isDemoMode,
+    setIsDemoMode,
     datasetName,
     setDatasetName,
     cohortConfig,
@@ -173,7 +170,6 @@ export function AppProvider({ children }) {
     generateCohort,
     resetCohort,
     originalSummary,
-    // Phase 6 — custom cohort (backend-driven)
     customCohort,
     customCohortStatus,
     generateCustomCohort,

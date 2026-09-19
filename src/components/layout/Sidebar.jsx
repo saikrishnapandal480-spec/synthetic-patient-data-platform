@@ -13,7 +13,7 @@ const STEP_ROUTES = [
 ]
 
 export default function Sidebar() {
-  const { hasGenerated } = useApp()
+  const { hasGenerated, isDemoMode, setIsDemoMode } = useApp()
   const doneCount = hasGenerated ? 5 : 0
   return (
     <aside className="hidden h-screen w-64 shrink-0 flex-col border-r border-white/5 bg-ink-950/60 backdrop-blur-xl lg:flex">
@@ -76,21 +76,37 @@ export default function Sidebar() {
             )
           })}
           <p className="mt-3 border-t border-white/5 pt-3 text-[10px] leading-relaxed text-slate-500">
-            Demo mode: all data is mocked in the frontend. Backend integration planned.
+            {isDemoMode
+              ? 'Demo mode: all data is mocked in the frontend.'
+              : 'Live mode: data comes from the FastAPI backend.'}
           </p>
         </div>
       </nav>
 
       <div className="border-t border-white/5 p-4">
-        <div className="rounded-xl border border-emerald-400/15 bg-emerald-400/5 p-3">
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 animate-pulse-dot rounded-full bg-emerald-400" />
-            <p className="text-xs font-semibold text-emerald-300">Demo mode active</p>
+        <button 
+          onClick={() => setIsDemoMode(!isDemoMode)}
+          className={`w-full text-left rounded-xl border p-3 transition-colors ${
+            isDemoMode 
+              ? 'border-emerald-400/15 bg-emerald-400/5 hover:bg-emerald-400/10' 
+              : 'border-white/10 bg-white/5 hover:bg-white/10'
+          }`}
+        >
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <span className={`h-2 w-2 rounded-full ${isDemoMode ? 'animate-pulse-dot bg-emerald-400' : 'bg-slate-500'}`} />
+              <p className={`text-xs font-semibold ${isDemoMode ? 'text-emerald-300' : 'text-slate-400'}`}>
+                {isDemoMode ? 'Demo mode active' : 'Live backend active'}
+              </p>
+            </div>
+            <div className={`flex h-4 w-7 items-center rounded-full p-0.5 transition-colors ${isDemoMode ? 'bg-emerald-500' : 'bg-slate-600'}`}>
+              <div className={`h-3 w-3 rounded-full bg-white transition-transform ${isDemoMode ? 'translate-x-3' : 'translate-x-0'}`} />
+            </div>
           </div>
           <p className="mt-1 text-[10px] leading-relaxed text-slate-400">
-            Sample dataset loaded — 1,000 mock patients
+            {isDemoMode ? 'Sample dataset loaded — 1,000 mock patients' : 'Connected to FastAPI backend'}
           </p>
-        </div>
+        </button>
       </div>
     </aside>
   )
