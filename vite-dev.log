@@ -1,0 +1,510 @@
+
+> synthetic-patient-data-platform@0.1.0 dev
+> vite
+
+Port 5173 is in use, trying another one...
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m952[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5174[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m2:51:01 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ui/Icon.jsx, /src/index.css[22m
+[2m2:53:38 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css[22m
+[2m2:53:38 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/layout/Sidebar.jsx, /src/components/layout/MobileNav.jsx[22m
+[2m2:57:04 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/predictor/RiskSummary.jsx, /src/index.css[22m
+[2m4:27:04 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Predictor.jsx, /src/index.css[22m
+[2m8:06:34 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/state/AppContext.jsx, /src/pages/Dashboard.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/pages/Analysis.jsx[22m
+[2m8:07:54 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/state/AppContext.jsx, /src/pages/Dashboard.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/pages/Analysis.jsx[22m
+[2m8:07:54 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m8:07:54 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx[22m
+[2m8:13:01 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/state/AppContext.jsx, /src/pages/Dashboard.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/pages/Analysis.jsx[22m
+[2m8:13:29 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/state/AppContext.jsx, /src/pages/Dashboard.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/pages/Analysis.jsx[22m
+[2m8:14:11 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/state/AppContext.jsx, /src/pages/Dashboard.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/pages/Analysis.jsx[22m
+[2m8:14:11 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m8:14:11 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx[22m
+[2m8:26:05 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/state/AppContext.jsx, /src/pages/Dashboard.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/pages/Analysis.jsx[22m
+[2m8:26:05 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m8:26:05 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx[22m
+[2m8:29:00 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ui/Icon.jsx, /src/index.css[22m
+[2m8:29:14 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css[22m
+[2m8:29:14 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/layout/Sidebar.jsx, /src/components/layout/MobileNav.jsx[22m
+[2m10:31:47 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/state/AppContext.jsx, /src/pages/Dashboard.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/pages/Analysis.jsx, /src/pages/SourceDataset.jsx[22m
+[2m10:31:47 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m10:31:47 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx[22m
+[2m10:38:20 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Predictor.jsx[22m
+[2m10:38:53 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Predictor.jsx[22m
+[2m10:41:34 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/state/AppContext.jsx, /src/pages/Dashboard.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/pages/Analysis.jsx, /src/pages/SourceDataset.jsx[22m
+[2m10:41:34 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m10:41:34 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx[22m
+[2m10:41:52 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/state/AppContext.jsx, /src/index.css[22m
+[2m10:41:52 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m10:41:52 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx[22m
+[2m10:43:20 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css[22m
+[2m10:43:26 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/layout/Sidebar.jsx, /src/components/layout/MobileNav.jsx[22m
+[2m10:44:22 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/state/AppContext.jsx, /src/index.css[22m
+[2m10:44:22 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m10:44:22 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx, /src/pages/CustomCohort.jsx[22m
+[2m10:53:23 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.jsx, /src/index.css[22m
+[2m11:24:12 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Predictor.jsx, /src/index.css[22m
+[2m11:26:45 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/predictor/RiskSummary.jsx, /src/index.css[22m
+[2m11:38:00 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/state/AppContext.jsx, /src/pages/Dashboard.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/pages/Analysis.jsx, /src/pages/SourceDataset.jsx, /src/pages/CustomCohort.jsx[22m
+[2m11:38:14 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/state/AppContext.jsx, /src/pages/Dashboard.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/pages/Analysis.jsx, /src/pages/SourceDataset.jsx, /src/pages/CustomCohort.jsx[22m
+[2m11:38:14 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m11:38:14 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx, /src/pages/CustomCohort.jsx, /src/pages/Dashboard.jsx[22m
+[2m11:38:27 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/charts/CorrelationMatrix.jsx, /src/index.css[22m
+[2m11:38:39 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m11:38:51 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m11:39:39 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m11:39:53 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m11:39:53 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\src\pages\Validation.jsx: Unexpected token (133:7)
+
+[0m [90m 131 |[31m         description[33m=[31m{[32m`Original source dataset vs the current generated synthetic cohort. All statistics are calculated from the actual records (${cohortSource}).`[31m}
+ [90m 132 |[31m         badge[33m=[31m{[33m<[31m[33mBadge[31m variant[33m=[31m[32m"data"[31m[33m>[31m[33mCalculated[31m [36mfrom[31m records[33m<[31m[33m/[31m[33mBadge[31m[33m>[31m
+[31m[1m>[22m[31m[90m 133 |[31m       [33m/[31m[33m>[31m
+ [90m     |[31m        [31m[1m^[22m[31m
+ [90m 134 |[31m
+ [90m 135 |[31m       {[90m/* Legend / cohort sizes */[31m}
+ [90m 136 |[31m       [33m<[31m[33mdiv[31m className[33m=[31m[32m"glass flex flex-wrap items-center gap-x-8 gap-y-3 rounded-2xl p-4 text-xs shadow-card"[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/saikr/OneDrive/Documents/VNR HACKTHON/src/pages/Validation.jsx[39m:133:7
+[33m  131|          description={`Original source dataset vs the current generated synthetic cohort. All statistics are calculated from the actual records (${cohortSource}).`}
+  132|          badge={<Badge variant="data">Calculated from records</Badge>
+  133|        />
+     |         ^
+  134|  
+  135|        {/* Legend / cohort sizes */}[39m
+      at constructor (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6620:19)
+      at JSXParserMixin.unexpected (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6640:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11468:22)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOpBaseRightExpr (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11007:34)
+      at JSXParserMixin.parseExprOpRightExpr (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11002:21)
+      at JSXParserMixin.parseExprOp (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10968:27)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10929:17)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10805:23)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10801:39
+      at JSXParserMixin.allowInAnd (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12455:12)
+      at JSXParserMixin.parseExpression (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10801:17)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4648:31)
+      at JSXParserMixin.jsxParseAttributeValue (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4620:21)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4669:38)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4683:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4678:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4702:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4714:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4765:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4775:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:39
+      at JSXParserMixin.allowInAnd (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12455:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12522:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11701:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11357:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10805:23)
+[2m11:40:08 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m11:40:08 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\src\pages\Validation.jsx: Unexpected token (133:7)
+
+[0m [90m 131 |[31m         description[33m=[31m{[32m`Original source dataset vs the current generated synthetic cohort. All statistics are calculated from the actual records (${cohortSource}).`[31m}
+ [90m 132 |[31m         badge[33m=[31m{[33m<[31m[33mBadge[31m variant[33m=[31m[32m"data"[31m[33m>[31m[33mCalculated[31m [36mfrom[31m records[33m<[31m[33m/[31m[33mBadge[31m[33m>[31m
+[31m[1m>[22m[31m[90m 133 |[31m       [33m/[31m[33m>[31m
+ [90m     |[31m        [31m[1m^[22m[31m
+ [90m 134 |[31m
+ [90m 135 |[31m       {[90m/* Legend / cohort sizes */[31m}
+ [90m 136 |[31m       [33m<[31m[33mdiv[31m className[33m=[31m[32m"glass flex flex-wrap items-center gap-x-8 gap-y-3 rounded-2xl p-4 text-xs shadow-card"[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/saikr/OneDrive/Documents/VNR HACKTHON/src/pages/Validation.jsx[39m:133:7
+[33m  131|          description={`Original source dataset vs the current generated synthetic cohort. All statistics are calculated from the actual records (${cohortSource}).`}
+  132|          badge={<Badge variant="data">Calculated from records</Badge>
+  133|        />
+     |         ^
+  134|  
+  135|        {/* Legend / cohort sizes */}[39m
+      at constructor (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6620:19)
+      at JSXParserMixin.unexpected (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6640:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11468:22)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOpBaseRightExpr (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11007:34)
+      at JSXParserMixin.parseExprOpRightExpr (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11002:21)
+      at JSXParserMixin.parseExprOp (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10968:27)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10929:17)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10805:23)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10801:39
+      at JSXParserMixin.allowInAnd (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12455:12)
+      at JSXParserMixin.parseExpression (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10801:17)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4648:31)
+      at JSXParserMixin.jsxParseAttributeValue (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4620:21)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4669:38)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4683:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4678:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4702:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4714:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4765:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4775:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:39
+      at JSXParserMixin.allowInAnd (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12455:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12522:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11701:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11357:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10805:23)
+[2m11:40:57 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m11:45:58 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m11:48:03 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Predictor.jsx, /src/state/AppContext.jsx, /src/pages/Validation.jsx[22m
+[2m11:48:03 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m11:48:03 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx, /src/pages/CustomCohort.jsx, /src/pages/Dashboard.jsx[22m
+[2m11:48:15 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m11:48:22 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m12:02:14 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m12:02:14 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\src\pages\Validation.jsx: Unexpected token, expected "]" (141:128)
+
+[0m [90m 139 |[31m
+ [90m 140 |[31m [36mfunction[31m pairize(orig[33m,[31m synth) {
+[31m[1m>[22m[31m[90m 141 |[31m   [36mreturn[31m orig[33m.[31mmap((o[33m,[31m i) [33m=>[31m ({ label[33m:[31m o[33m.[31mlabel[33m,[31m original[33m:[31m o[33m.[31moriginal [33m?[31m[33m?[31m o[33m.[31mvalue[33m,[31m synthetic[33m:[31m synth[i][33m.[31msynthetic [33m?[31m[33m?[31m synth[i[33m.[31m value }))
+ [90m     |[31m                                                                                                                                 [31m[1m^[22m[31m
+ [90m 142 |[31m }
+ [90m 143 |[31m
+ [90m 144 |[31m [36mfunction[31m [33mCompareRow[31m({ label[33m,[31m original[33m,[31m synthetic[33m,[31m unit [33m=[31m [32m''[31m }) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/saikr/OneDrive/Documents/VNR HACKTHON/src/pages/Validation.jsx[39m:141:128
+[33m  139|  
+  140|  function pairize(orig, synth) {
+  141|    return orig.map((o, i) => ({ label: o.label, original: o.original ?? o.value, synthetic: synth[i].synthetic ?? synth[i. value }))
+     |                                                                                                                                  ^
+  142|  }
+  143|  [39m
+      at constructor (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6620:19)
+      at JSXParserMixin.unexpected (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6640:16)
+      at JSXParserMixin.expect (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6920:12)
+      at JSXParserMixin.parseMember (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11161:12)
+      at JSXParserMixin.parseSubscript (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11145:21)
+      at JSXParserMixin.parseSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11115:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11106:17)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOpBaseRightExpr (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11007:34)
+      at JSXParserMixin.parseExprOpRightExpr (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11002:21)
+      at JSXParserMixin.parseExprOp (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10968:27)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10929:17)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:39
+      at JSXParserMixin.allowInAnd (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12455:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12522:17)
+      at JSXParserMixin.parseObjectProperty (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11979:83)
+      at JSXParserMixin.parseObjPropValue (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12007:100)
+      at JSXParserMixin.parsePropertyDefinition (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11944:17)
+      at JSXParserMixin.parseObjectLike (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11861:21)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11365:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:39
+      at JSXParserMixin.allowInAnd (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12455:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12522:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11701:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11357:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at JSXParserMixin.parseFunctionBody (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12122:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12104:10)
+[2m12:03:40 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m12:04:24 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m12:14:31 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m12:16:49 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Validation.jsx, /src/index.css[22m
+[2m12:43:16 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Predictor.jsx, /src/state/AppContext.jsx, /src/pages/Validation.jsx[22m
+[2m12:43:16 am[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m12:43:16 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx, /src/pages/CustomCohort.jsx, /src/pages/Dashboard.jsx[22m
+[2m12:44:55 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css[22m
+[2m12:45:00 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/layout/Sidebar.jsx, /src/components/layout/MobileNav.jsx[22m
+[2m12:49:24 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Predictor.jsx, /src/index.css[22m
+[2m12:49:46 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/predictor/TimelineView.jsx, /src/index.css[22m
+[2m12:49:46 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\src\components\predictor\TimelineView.jsx: Expected corresponding JSX closing tag for <div>. (91:14)
+
+[0m [90m 89 |[31m                   {o[33m.[31mage [33m!=[31m [36mnull[31m [33m?[31m o[33m.[31mage [33m:[31m [32m'—'[31m}
+ [90m 90 |[31m                 [33m<[31m[33m/[31m[33mspan[31m[33m>[31m
+[31m[1m>[22m[31m[90m 91 |[31m               [33m<[31m[33m/[31m[33mspan[31m[33m>[31m
+ [90m    |[31m               [31m[1m^[22m[31m
+ [90m 92 |[31m               [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 93 |[31m             [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 94 |[31m           [33m<[31m[33m/[31m[33mli[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/saikr/OneDrive/Documents/VNR HACKTHON/src/components/predictor/TimelineView.jsx[39m:91:14
+[33m  89 |                    {o.age != null ? o.age : '—'}
+  90 |                  </span>
+  91 |                </span>
+     |                ^
+  92 |                </div>
+  93 |              </div>[39m
+      at constructor (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6620:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4743:16)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4714:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4714:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4765:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4775:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:39
+      at JSXParserMixin.allowInAnd (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12455:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12522:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11701:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11357:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at JSXParserMixin.parseFunctionBody (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12122:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12104:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11713:12)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11357:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:39
+      at JSXParserMixin.allowInAnd (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12455:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12522:17)
+      at JSXParserMixin.parseExprListItem (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12204:18)
+      at JSXParserMixin.parseCallExpressionArguments (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11278:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11212:29)
+      at JSXParserMixin.parseSubscript (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11141:19)
+      at JSXParserMixin.parseSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11115:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11106:17)
+[2m12:51:16 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/predictor/TimelineView.jsx, /src/index.css[22m
+[2m12:56:13 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/state/AppContext.jsx, /src/index.css[22m
+[2m12:56:13 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\src\state\AppContext.jsx: Unexpected token, expected "," (117:45)
+
+[0m [90m 115 |[31m   }
+ [90m 116 |[31m
+[31m[1m>[22m[31m[90m 117 |[31m   [36mconst[31m originalSummary [33m=[31m useMemo(() [33m=>[31m [36mthis[31m will[33m-[31mnot[33m-[31mcompile
+ [90m     |[31m                                              [31m[1m^[22m[31m
+ [90m 118 |[31m
+ [90m 119 |[31m   [36mconst[31m value [33m=[31m {
+ [90m 120 |[31m     datasetName[33m,[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/saikr/OneDrive/Documents/VNR HACKTHON/src/state/AppContext.jsx[39m:117:45
+[33m  115|    }
+  116|  
+  117|    const originalSummary = useMemo(() => this will-not-compile
+     |                                               ^
+  118|  
+  119|    const value = {[39m
+      at constructor (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6620:19)
+      at JSXParserMixin.unexpected (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6640:16)
+      at JSXParserMixin.expect (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6920:12)
+      at JSXParserMixin.parseCallExpressionArguments (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11269:14)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11212:29)
+      at JSXParserMixin.parseSubscript (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11141:19)
+      at JSXParserMixin.parseSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11115:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11106:17)
+      at JSXParserMixin.parseUpdate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10852:21)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:39
+      at JSXParserMixin.allowInAnd (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12450:16)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:10821:17)
+      at JSXParserMixin.parseVar (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13413:91)
+      at JSXParserMixin.parseVarStatement (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13259:10)
+      at JSXParserMixin.parseStatementContent (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12880:23)
+      at JSXParserMixin.parseStatementLike (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12796:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12776:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13345:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13338:10)
+      at JSXParserMixin.parseBlock (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12129:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12115:10)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13474:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12432:14)
+      at JSXParserMixin.parseFunction (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13473:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13154:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12820:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12796:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12776:17)
+      at JSXParserMixin.parseExportDeclaration (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13963:17)
+      at JSXParserMixin.maybeParseExportDeclaration (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13922:31)
+      at JSXParserMixin.parseExport (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13841:29)
+      at JSXParserMixin.parseStatementContent (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12907:27)
+      at JSXParserMixin.parseStatementLike (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12796:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12773:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13345:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13338:10)
+      at JSXParserMixin.parseProgram (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12651:10)
+      at JSXParserMixin.parseTopLevel (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12641:25)
+      at JSXParserMixin.parse (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:14517:25)
+      at parse (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:14551:38)
+      at parser (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+[2m12:56:22 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/state/AppContext.jsx, /src/index.css[22m
+[2m12:56:22 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\src\state\AppContext.jsx: Missing semicolon. (2:109)
+
+[0m [90m 1 |[31m [36mimport[31m { createContext[33m,[31m useContext[33m,[31m useEffect[33m,[31m useMemo[33m,[31m useState } [36mfrom[31m [32m'react'[31m
+[31m[1m>[22m[31m[90m 2 |[31m [36mimport[31m { generateSyntheticCohort[33m,[31m getOriginalSummary[33m,[31m backendPatientsToCanonical } [36mfrom[31m [32m'../data/mockData.js'[31m[36mimport[31m { api[33m,[31m cohortErrorMessage } [36mfrom[31m [32m'../api/client.js'[31m
+ [90m   |[31m                                                                                                              [31m[1m^[22m[31m
+ [90m 3 |[31m
+ [90m 4 |[31m [36mconst[31m [33mAppContext[31m [33m=[31m createContext([36mnull[31m)
+ [90m 5 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/saikr/OneDrive/Documents/VNR HACKTHON/src/state/AppContext.jsx[39m:2:109
+[33m  1  |  import { createContext, useContext, useEffect, useMemo, useState } from 'react'
+  2  |  import { generateSyntheticCohort, getOriginalSummary, backendPatientsToCanonical } from '../data/mockData.js'import { api, cohortErrorMessage } from '../api/client.js'
+     |                                                                                                               ^
+  3  |  
+  4  |  const AppContext = createContext(null)[39m
+      at constructor (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6620:19)
+      at JSXParserMixin.semicolon (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:6916:10)
+      at JSXParserMixin.parseImportSourceAndAttributes (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:14282:10)
+      at JSXParserMixin.parseImportSpecifiersAndAfter (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:14273:17)
+      at JSXParserMixin.parseImport (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:14264:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12905:27)
+      at JSXParserMixin.parseStatementLike (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12796:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12773:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13345:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:13338:10)
+      at JSXParserMixin.parseProgram (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12651:10)
+      at JSXParserMixin.parseTopLevel (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:12641:25)
+      at JSXParserMixin.parse (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:14517:25)
+      at parse (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\parser\lib\index.js:14551:38)
+      at parser (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\gensync\index.js:261:32)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\gensync\index.js:223:11)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\gensync\index.js:189:28
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\gensync\index.js:113:33
+      at step (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\gensync\index.js:287:14)
+      at C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\saikr\OneDrive\Documents\VNR HACKTHON\node_modules\gensync\index.js:223:11)
+[2m12:56:46 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/state/AppContext.jsx, /src/index.css[22m
+[2m12:56:46 am[22m [33m[1m[vite][22m[39m [33mwarning: [33mDuplicate key "recoveredFromBackend" in object literal[33m
+155|          generatedAt: resp.generated_at || null,
+156|          recoveredFromBackend: true,
+157|          recoveredFromBackend: true
+   |          ^
+158|        });
+159|        const ageGroups = { '18–35': 0, '36–55': 0, '56–75': 0, '76+': 0 };
+[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/saikr/OneDrive/Documents/VNR HACKTHON/src/state/AppContext.jsx[39m
+[2m12:56:46 am[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m12:56:46 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx, /src/pages/CustomCohort.jsx, /src/pages/Dashboard.jsx[22m
+[2m12:56:50 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/state/AppContext.jsx, /src/index.css[22m
+[2m12:56:50 am[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m12:56:50 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx, /src/pages/CustomCohort.jsx, /src/pages/Dashboard.jsx[22m
+[2m12:59:05 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/state/AppContext.jsx, /src/index.css[22m
+[2m12:59:05 am[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m12:59:05 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx, /src/pages/CustomCohort.jsx, /src/pages/Dashboard.jsx[22m
+[2m1:19:19 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Validation.jsx[22m
+[2m1:20:07 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/charts/TimeSeriesChart.jsx, /src/index.css[22m
+[2m1:20:07 am[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/charts/TimeSeriesChart.jsx[22m Could not Fast Refresh (new export)
+[2m1:20:07 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Longitudinal.jsx[22m
+[2m1:21:11 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Longitudinal.jsx, /src/index.css[22m
+[2m1:21:29 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Longitudinal.jsx, /src/index.css[22m
+[2m1:21:41 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Longitudinal.jsx, /src/index.css[22m
+[2m1:22:02 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Longitudinal.jsx, /src/index.css[22m
+[2m1:30:37 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Longitudinal.jsx, /src/index.css[22m
+[2m1:47:55 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/state/AppContext.jsx, /src/index.css[22m
+[2m1:47:55 am[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m1:47:55 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx, /src/pages/CustomCohort.jsx, /src/pages/Dashboard.jsx[22m
+[2m1:48:12 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/SyntheticData.jsx, /src/index.css[22m
+[2m1:48:37 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/SyntheticData.jsx, /src/index.css[22m
+[2m1:49:16 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/SyntheticData.jsx, /src/index.css[22m
+[2m1:49:33 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/SyntheticData.jsx, /src/index.css[22m
+[2m1:49:53 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/SyntheticData.jsx, /src/index.css[22m
+[2m1:50:34 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Longitudinal.jsx, /src/index.css[22m
+[2m1:50:46 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Longitudinal.jsx, /src/index.css[22m
+[2m5:14:47 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.jsx, /src/index.css[22m
+[2m5:15:03 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.jsx, /src/index.css[22m
+[2m5:39:41 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Predictor.jsx, /src/state/AppContext.jsx, /src/pages/Validation.jsx, /src/pages/Longitudinal.jsx[22m
+[2m5:39:41 am[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/state/AppContext.jsx[22m Could not Fast Refresh ("DEFAULT_COHORT" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m5:39:41 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css, /src/components/layout/Layout.jsx, /src/pages/CohortBuilder.jsx, /src/pages/Privacy.jsx, /src/pages/Validation.jsx, /src/pages/DataAssistant.jsx, /src/pages/SyntheticData.jsx, /src/components/layout/Sidebar.jsx, /src/pages/CustomCohort.jsx, /src/pages/Dashboard.jsx[22m
+[2m5:40:09 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/DataAssistant.jsx, /src/index.css[22m
+[2m5:40:35 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/DataAssistant.jsx, /src/index.css[22m
+[2m6:07:55 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/DataAssistant.jsx, /src/index.css[22m
