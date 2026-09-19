@@ -30,8 +30,8 @@ export default function Analysis() {
     <div className="space-y-6">
       <PageHeader
         title="Dataset Analysis"
-        description="Statistical profile of the uploaded dataset. All values below are sample/mock data for the frontend demo."
-        badge={<Badge variant="mock">Mock / sample data</Badge>}
+        description="Statistical profile of the original source dataset (public Synthea synthetic sample). All values are calculated from the actual source records."
+        badge={<Badge variant="data">Source dataset</Badge>}
       >
         <div className="glass flex items-center gap-2 rounded-xl px-4 py-2 text-xs text-slate-300">
           <span className="h-2 w-2 rounded-full bg-emerald-400" />
@@ -54,7 +54,7 @@ export default function Analysis() {
         <ChartCard
           title="Age distribution"
           description="Patients per age band"
-          badge={<Badge variant="mock">Mock</Badge>}
+          badge={<Badge variant="data">Calculated from source dataset</Badge>}
         >
           <BarChart data={getOriginalAgeHistogram().map((d) => ({ label: d.label, value: d.original }))} />
         </ChartCard>
@@ -62,7 +62,7 @@ export default function Analysis() {
         <ChartCard
           title="Diabetes distribution"
           description="Share of patients with diabetes"
-          badge={<Badge variant="mock">Mock</Badge>}
+          badge={<Badge variant="data">Calculated from source dataset</Badge>}
         >
           <DonutChart
             data={diabetesData}
@@ -74,7 +74,7 @@ export default function Analysis() {
         <ChartCard
           title="Blood pressure distribution"
           description="AHA systolic bands (Normal <120 · Elevated <130 · Stage 1 <140 · Stage 2 ≥140)"
-          badge={<Badge variant="mock">Mock</Badge>}
+          badge={<Badge variant="data">Calculated from source dataset</Badge>}
         >
           <BarChart data={getOriginalBpHisto().map((d) => ({ label: d.label, value: d.original }))} multicolor />
         </ChartCard>
@@ -82,7 +82,7 @@ export default function Analysis() {
         <ChartCard
           title="Activity level"
           description="Self-reported physical activity"
-          badge={<Badge variant="mock">Mock</Badge>}
+          badge={<Badge variant="data">Calculated from source dataset</Badge>}
         >
           <BarChart data={getOriginalActivityHistogram()} />
         </ChartCard>
@@ -90,7 +90,7 @@ export default function Analysis() {
         <ChartCard
           title="Pain score distribution"
           description="Reported pain scores from 0 (none) to 10 (worst)"
-          badge={<Badge variant="mock">Mock</Badge>}
+          badge={<Badge variant="data">Calculated from source dataset</Badge>}
         >
           <BarChart data={getOriginalPainHistogram().map((d) => ({ label: d.label, value: d.original }))} />
         </ChartCard>
@@ -98,7 +98,7 @@ export default function Analysis() {
         <ChartCard
           title="Gender distribution"
           description="Recorded gender across the cohort"
-          badge={<Badge variant="mock">Mock</Badge>}
+          badge={<Badge variant="data">Calculated from source dataset</Badge>}
         >
           <DonutChart data={getOriginalGenderHistogram()} centerValue={fmtInt(s.n)} centerLabel="patients" />
         </ChartCard>
@@ -107,8 +107,8 @@ export default function Analysis() {
       {/* Correlation matrix */}
       <ChartCard
         title="Correlation matrix"
-        description="Pairwise Pearson-style correlations between numeric and encoded variables"
-        badge={<Badge variant="mock">Mock values</Badge>}
+        description="Pairwise Pearson correlations between numeric and encoded variables"
+        badge={<Badge variant="data">Calculated from source dataset</Badge>}
         className="w-full"
       >
         <CorrelationMatrix fields={CORRELATION_FIELDS} matrix={CORRELATION_MATRIX} />
@@ -118,7 +118,7 @@ export default function Analysis() {
       <ChartCard
         title="Column report"
         description={`${DATASET_INFO.columns} columns · ${DATASET_INFO.fileSize} file`}
-        badge={<Badge variant="mock">Mock</Badge>}
+        badge={<Badge variant="data">Calculated from source dataset</Badge>}
       >
         <div className="overflow-x-auto">
           <table className="w-full min-w-[480px] text-sm">

@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react'
-import { generateSyntheticCohort, getOriginalSummary, backendPatientsToCanonical } from '../data/mockData.js'
-import { api, cohortErrorMessage, setDemoMode } from '../api/client.js'
+import { getOriginalSummary, backendPatientsToCanonical } from '../data/mockData.js'
+import { api, cohortErrorMessage } from '../api/client.js'
 
 const AppContext = createContext(null)
 
@@ -28,8 +28,6 @@ function loadPersisted() {
 export function AppProvider({ children }) {
   const persisted = useMemo(loadPersisted, [])
 
-  // Backend is live since Phase 4 — default to it (demo mode is an explicit opt-in via the sidebar toggle).
-  const [isDemoMode, setIsDemoMode] = useState(persisted.isDemoMode ?? false)
   const [datasetName, setDatasetName] = useState(persisted.datasetName || 'cardio_cohort_2024.csv')
   const [cohortConfig, setCohortConfig] = useState(persisted.cohortConfig || DEFAULT_COHORT)
   const [syntheticPatients, setSyntheticPatients] = useState(persisted.syntheticPatients || null)
@@ -39,36 +37,29 @@ export function AppProvider({ children }) {
   const [customCohortStatus, setCustomCohortStatus] = useState('idle') // idle | generating | done | error
   const [generationStatus, setGenerationStatus] = useState('idle') // idle | generating | done
 
-  // Sync demo mode to API client
-  useEffect(() => {
-    setDemoMode(isDemoMode)
-  }, [isDemoMode])
-
-  // Keep the mock session alive across page reloads.
+  // Keep the session alive across page reloads.
   useEffect(() => {
     try {
       sessionStorage.setItem(
         STORAGE_KEY,
-        JSON.stringify({ datasetName, cohortConfig, syntheticPatients, hasGenerated, customCohort, isDemoMode }),
+        JSON.stringify({ datasetName, cohortConfig, syntheticPatients, hasGenerated, customCohort }),
       )
     } catch {
       // Storage full or unavailable
     }
-  }, [datasetName, cohortConfig, syntheticPatients, hasGenerated, customCohort, isDemoMode])
+  }, [datasetName, cohortConfig, syntheticPatients, hasGenerated, customCohort])
 
-  // Mock "generation": builds a seeded synthetic cohort client-side after a delay.
-  const generateCohort = (config) => {
-    setGenerationStatus('generating')
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        const patients = generateSyntheticCohort(config)
-        setSyntheticPatients(patients)
-        setHasGenerated(true)
-        setGenerationStatus('done')
-        resolve(patients)
-      }, 1800)
+  // Legacy entry point (Synthetic Data "Generate Again") — now routed through
+  // the real backend cohort generator instead of client-side mock generation.
+  const generateCohort = (config) =>
+    generateCustomCohort({
+      patient_count: config.count,
+      diabetes_percentage: config.diabetesPct,
+      hypertension_percentage: config.highBpPct,
+      activity_level: 'any',
+      medication_adherence: 'any',
+      pain_score: 'any',
     })
-  }
 
   const resetCohort = () => {
     setSyntheticPatients(null)
@@ -78,7 +69,7 @@ export function AppProvider({ children }) {
     setCustomCohortStatus('idle')
   }
 
-  // Phase 6 — calls POST /api/cohort/generate on the FastAPI backend (or uses mock data in demo mode)
+  // Phase 6 — calls POST /api/cohort/generate on the FastAPI backend
   const generateCustomCohort = async (params) => {
     setCustomCohortStatus('generating')
     try {
@@ -115,6 +106,9 @@ export function AppProvider({ children }) {
       return { ok: false, error: cohortErrorMessage(err), status: err?.status }
     }
   }
+
+  // Alias so both entry points share one implementation.
+  // (generateCohort above delegates to generateCustomCohort.)
 
   // Phase 7 — session recovery
   useEffect(() => {
@@ -158,8 +152,6 @@ export function AppProvider({ children }) {
   const originalSummary = useMemo(() => getOriginalSummary(), [])
 
   const value = {
-    isDemoMode,
-    setIsDemoMode,
     datasetName,
     setDatasetName,
     cohortConfig,

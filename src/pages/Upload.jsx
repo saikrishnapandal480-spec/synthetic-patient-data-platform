@@ -101,7 +101,7 @@ export default function Upload() {
           onChange={onBrowse}
           aria-label="Browse CSV files"
         />
-        <p className="mt-5 text-xs text-slate-500">Supported format: CSV · Max demo size 50 MB · Patient data never uploaded in demo mode</p>
+        <p className="mt-5 text-xs text-slate-500">Supported format: CSV · Max size 50 MB · Patient data never leaves your device</p>
       </div>
 
       {/* Selected file / upload status */}

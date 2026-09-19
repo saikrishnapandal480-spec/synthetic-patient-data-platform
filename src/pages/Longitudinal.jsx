@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import PageHeader from '../components/ui/PageHeader.jsx'
 import Badge from '../components/ui/Badge.jsx'
 import ChartCard from '../components/ui/ChartCard.jsx'
@@ -114,7 +114,8 @@ export default function Longitudinal() {
   const [exportInfo, setExportInfo] = useState(null)
   const [exportError, setExportError] = useState(null)
 
-  useEffect(() => {
+  // Retryable patient-list load — shared backend store (GET /api/patients).
+  const loadPatients = useCallback(() => {
     let cancelled = false
     setLoadingList(true)
     api.patients()
@@ -134,6 +135,8 @@ export default function Longitudinal() {
       cancelled = true
     }
   }, [])
+
+  useEffect(() => loadPatients(), [loadPatients])
 
   // Same COH-* patients as Custom Cohort and the Interaction Predictor — one
   // shared backend list, no separate frontend store.
@@ -225,9 +228,19 @@ export default function Longitudinal() {
       </div>
 
       {error && (
-        <div className="glass flex items-start gap-3 rounded-2xl px-4 py-3 text-sm text-rose-200">
+        <div className="glass flex flex-wrap items-start gap-3 rounded-2xl px-4 py-3 text-sm text-rose-200">
           <Icon name="alert" className="mt-0.5 h-4 w-4 shrink-0" />
-          {error}
+          <span className="flex-1">{error}</span>
+          <button
+            type="button"
+            onClick={() => {
+              setError(null)
+              loadPatients()
+            }}
+            className="rounded-lg border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-200 transition-colors hover:bg-white/10"
+          >
+            Retry
+          </button>
         </div>
       )}
 

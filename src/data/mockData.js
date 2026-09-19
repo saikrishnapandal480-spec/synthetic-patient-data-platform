@@ -319,6 +319,8 @@ function deriveAdherence(rand, age, conditionCount) {
   return weightedPick(rand, w)
 }
 
+// TESTS ONLY — not imported by any page or state module. The application's
+// real generator is the FastAPI backend (POST /api/cohort/generate).
 export function generateSyntheticCohort(config) {
   const {
     count = 500,

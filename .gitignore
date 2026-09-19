@@ -6,3 +6,6 @@ npm-install.log
 
 # Raw Synthea download (~30 MB extracted) — re-fetchable via `npm run fetch:source`
 source_data/
+
+# freebuff local logs
+.freebuff/*.log

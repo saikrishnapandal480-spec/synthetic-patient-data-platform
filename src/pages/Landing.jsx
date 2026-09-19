@@ -72,7 +72,7 @@ export default function Landing() {
       <section className="relative z-10 mx-auto max-w-6xl px-6 pb-16 pt-14 text-center md:pt-20">
         <span className="inline-flex items-center gap-2 rounded-full border border-sky-400/20 bg-sky-400/10 px-3.5 py-1.5 text-xs font-semibold text-sky-300">
           <span className="h-1.5 w-1.5 animate-pulse-dot rounded-full bg-sky-300" />
-          Frontend preview — demo data only
+          Live backend — synthetic data for research
         </span>
         <h1 className="mx-auto mt-6 max-w-3xl text-4xl font-extrabold leading-tight tracking-tight text-white md:text-6xl">
           Synthetic patient data,

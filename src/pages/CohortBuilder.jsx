@@ -66,8 +66,8 @@ export default function CohortBuilder() {
     <div className="mx-auto max-w-5xl space-y-6">
       <PageHeader
         title="Cohort Builder"
-        description="Configure the target population for your synthetic cohort. Generation runs as a frontend simulation in this phase — no real data synthesis yet."
-        badge={<Badge variant="mock">Frontend simulation</Badge>}
+        description="Configure the target population for your synthetic cohort. Generation runs on the FastAPI backend and the records are shared with every view."
+        badge={<Badge variant="success">Backend generation</Badge>}
       />
 
       <div className="grid gap-6 lg:grid-cols-5">
